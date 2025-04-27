@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Academy - Học tập vươn xa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Future Academy</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#courses">Khóa học</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">Về chúng tôi</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero" data-aos="fade-up">
+        <h1>Chào mừng đến với Future Academy</h1>
+        <p>Nơi khởi đầu cho tương lai học tập vượt trội của bạn!</p>
+        <a href="#courses" class="btn">Xem các khóa học</a>
+    </section>
+
+    <section id="courses" class="section" data-aos="fade-right">
+        <h2>Khóa học nổi bật</h2>
+        <div id="course-list" class="course-list"></div>
+        <div class="admin-panel">
+            <h3>Thêm khóa học mới</h3>
+            <input type="text" id="course-title" placeholder="Tên khóa học">
+            <input type="text" id="course-desc" placeholder="Mô tả ngắn">
+            <button onclick="addCourse()" class="btn">Thêm khóa học</button>
+        </div>
+    </section>
+
+    <section id="blog" class="section" data-aos="fade-left">
+        <h2>Blog Kiến Thức</h2>
+        <div class="blog-list">
+            <div class="blog-item">
+                <h3>5 Cách học Toán hiệu quả</h3>
+                <p>Giúp trẻ yêu thích toán học từ nhỏ.</p>
+                <a href="#">Xem thêm →</a>
+            </div>
+            <div class="blog-item">
+                <h3>Những kỹ năng mềm quan trọng</h3>
+                <p>Không chỉ kiến thức, kỹ năng mềm quyết định thành công.</p>
+                <a href="#">Xem thêm →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section" data-aos="zoom-in">
+        <h2>Về chúng tôi</h2>
+        <p>Future Academy là trung tâm giáo dục hiện đại, nơi đào tạo thế hệ trẻ tự tin bước vào thế giới mới.</p>
+    </section>
+
+    <section id="contact" class="section" data-aos="fade-up">
+        <h2>Liên hệ với chúng tôi</h2>
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Nội dung liên hệ" required></textarea>
+            <button type="submit" class="btn">Gửi liên hệ</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Future Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
